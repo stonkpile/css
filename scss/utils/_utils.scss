@@ -1,0 +1,21 @@
+.is-clickable {
+  cursor: pointer !important;
+  pointer-events: all !important;
+}
+
+.is-dimmed {
+  opacity: 0.5 !important;
+}
+
+.is-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.is-resizeble {
+  resize: both !important;
+}
+
+.is-not-resizeble {
+  resize: none !important;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@stonkpile/css",
+  "version": "0.0.1",
+  "description": "A minimal css framework.",
+  "main": "dist/style.css",
+  "scripts": {
+    "scss": "node-sass scss -o dist",
+    "scss:watch": "node-sass scss -o dist -w",
+    "test": "npx http-server"
+  },
+  "files": [
+    "css",
+    "scss",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stonkpile/css.git"
+  },
+  "keywords": [
+    "css",
+    "minimal",
+    "framework"
+  ],
+  "author": "ImLinus & AdamHjerpe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stonkpile/css/issues"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2"
+  }
+}
