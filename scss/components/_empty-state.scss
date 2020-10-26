@@ -1,0 +1,24 @@
+.empty-state {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}

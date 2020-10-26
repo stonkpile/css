@@ -1,0 +1,55 @@
+@mixin heightWidth ($size) {
+  height: $size;
+  width: $size;
+  max-height: $size;
+  max-width: $size;
+  min-height: $size;
+  min-width: $size;
+}
+
+.delete {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: #0a0a0a33;
+  border: none;
+  border-radius: 921024px;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  @include heightWidth(1.25rem);
+
+  &.is-small {
+    @include heightWidth(1rem);
+  }
+
+  &.is-medium {
+    @include heightWidth(1.5rem);
+  }
+
+  &.is-large {
+    @include heightWidth(2rem);
+  }
+
+  &::before {
+    height: 2px;
+    width: 50%;
+  }
+
+  &::before,
+  &::after {
+    background: white;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform-origin: center center;
+  }
+}

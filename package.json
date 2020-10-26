@@ -4,8 +4,8 @@
   "description": "A minimal css framework.",
   "main": "dist/style.css",
   "scripts": {
-    "scss": "node-sass scss -o dist",
-    "scss:watch": "node-sass scss -o dist -w",
+    "scss": "node-sass scss -o dist --output-style=compressed --source-map=false",
+    "scss:watch": "node-sass scss -o dist -w --output-style=expanded --source-map=true",
     "test": "npx http-server"
   },
   "files": [
