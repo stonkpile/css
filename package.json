@@ -1,33 +1,45 @@
 {
-  "name": "@stonkpile/css",
+  "name": "@qbank/css",
   "version": "0.0.1",
-  "description": "A minimal css framework.",
+  "description": "A css framework.",
   "main": "dist/style.css",
   "scripts": {
-    "scss": "node-sass scss -o dist --output-style=compressed --source-map=false",
-    "scss:watch": "node-sass scss -o dist -w --output-style=expanded --source-map=true",
-    "test": "npx http-server"
+    "build": "build-storybook -c .storybook -o build",
+    "deploy": "storybook-to-ghpages",
+    "storybook": "start-storybook",
+    "test": "htmlhint \"src/**/*.html\" && stylelint \"src/**/*.css\" && eslint \"src/**/*.js\"",
+    "scss": "sass scss:dist --style=compressed --no-source-map",
+    "scss:watch": "sass scss:dist --style=expanded --source-map --watch"
   },
   "files": [
     "css",
     "scss",
     "package.json"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stonkpile/css.git"
-  },
-  "keywords": [
-    "css",
-    "minimal",
-    "framework"
-  ],
-  "author": "ImLinus & AdamHjerpe",
+  "author": "Linus Lilja",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/stonkpile/css/issues"
-  },
   "devDependencies": {
-    "node-sass": "^4.5.2"
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-a11y": "^6.0.25",
+    "@storybook/addon-actions": "^6.0.25",
+    "@storybook/addon-console": "^1.2.2",
+    "@storybook/addon-design-assets": "^6.0.25",
+    "@storybook/addon-notes": "^5.3.21",
+    "@storybook/addon-viewport": "^6.0.25",
+    "@storybook/html": "^6.0.25",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/storybook-deployer": "^2.8.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-standard": "^16.0.1",
+    "htmlhint": "^0.14.1",
+    "prettier": "^2.1.2",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.3.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
