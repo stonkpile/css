@@ -1,0 +1,27 @@
+/**
+ * The icon element
+ *
+ * Changelog
+ * 26/10/2020: Added initial component
+*/
+
+$iconSizes: (
+  'small': 1rem,
+  'medium': 2rem,
+  'large': 3rem
+);
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+
+  @each $name, $size in $iconSizes {
+    &.is-#{$name} {
+      height: $size;
+      width: $size;
+    }
+  }
+}

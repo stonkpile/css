@@ -1,0 +1,28 @@
+/**
+ * The audio element, just a bit nicer looking.
+ *
+ * Changelog
+ * 11/11/2020: Added initial component
+*/
+
+.audio {
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+
+  &:focus,
+  &:active {
+    outline: none !important;
+  }
+
+	&::-webkit-media-controls-enclosure {
+    border-radius: 0;
+    background-color: #f7f7f7;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+	}
+}

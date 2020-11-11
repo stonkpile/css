@@ -1,4 +1,11 @@
+import { addParameters } from '@storybook/html'
+import '@storybook/addon-console'
+import '../dist/style.css'
 
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}
+addParameters({
+  a11y: {
+    config: {},
+    options: {}
+  },
+  layout: 'fullscreen'
+})

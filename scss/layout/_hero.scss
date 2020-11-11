@@ -1,0 +1,9 @@
+// @import '../functions/index';
+
+.hero {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include colors;
+}

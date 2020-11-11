@@ -1,0 +1,51 @@
+/**
+ * The card component comprises several elements that you can mix and match
+ *
+ *  .card: the main container
+ *    .card-header: a horizontal bar with a border
+ *    .card-body: a multi-purpose container for any other element
+ *
+ * Changelog
+ * 09/11/2020: Added initial component
+*/
+
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: white;
+  background-clip: border-box;
+  border: 1px solid #00000020;
+  border-radius: 0.25rem;
+  min-height: 100%;
+
+  &-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #d8d8d8;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #333;
+      flex: 1 1 auto;
+      display: block;
+      @extend .text-is-ellipsis;
+    }
+  }
+
+  &-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+}

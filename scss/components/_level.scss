@@ -1,0 +1,105 @@
+/**
+ * A multi-purpose horizontal level, which can contain almost any other element
+ *
+ *  .level: the main container
+ *    .level-left: for the left side
+ *    .level-right: for the right side
+ *    .level-item: for each individual element
+ *
+ * Changelog
+ * 07/10/2020: Added initial component
+*/
+
+.level {
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 769px), print {
+    display: flex;
+  }
+
+  .level-item {
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+
+    .title,
+    .subtitle {
+      margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+
+  > .level-item:not(.is-narrow) {
+    @media screen and (min-width: 769px), print {
+      flex-grow: 1;
+    }
+  }
+
+  .level-left,
+  .level-right {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    .level-item:not(:last-child) {
+      @media screen and (min-width: 769px), print {
+        margin-right: 0.75rem;
+      }
+    }
+  }
+
+  .level-left {
+    align-items: center;
+    justify-content: flex-start;
+
+    @media screen and (min-width: 769px), print {
+      display: flex;
+    }
+  }
+
+  .level-right {
+    align-items: center;
+    justify-content: flex-end;
+
+    @media screen and (min-width: 769px), print {
+      display: flex;
+    }
+  }
+
+  .level-left + .level-right {
+    @media screen and (max-width: 768px) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &.is-mobile {
+    display: flex;
+
+    .level-left,
+    .level-right {
+      display: flex;
+    }
+
+    .level-left + .level-right {
+      margin-top: 0;
+    }
+
+    .level-item:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 0.75rem;
+    }
+
+    .level-item:not(.is-narrow) {
+      flex-grow: 1;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// Font Weights
+$weights: (
+  "thin": 200,
+  "light": 300,
+  "normal": 400,
+  "thick": 500,
+  "bold": 600,
+  "bolder": 700
+);
+
+@each $name, $weight in $weights {
+  .text-is-#{$name} {
+    font-weight: $weight !important;
+  }
+}
+
+// Font Sizes
+$sizes: (
+  "large": 125%,
+  "x-large": 150%
+);
+
+@each $name, $size in $sizes {
+  .has-text-#{$name} {
+    font-size: $size !important;
+  }
+}
+
+.text-is-capitalized {
+  text-transform: capitalize !important;
+}
+
+.text-is-preformatted {
+  white-space: pre !important;
+}
+
+.text-is-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

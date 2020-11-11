@@ -1,0 +1,7 @@
+@mixin colors {
+  @each $name, $color in $colors {
+    &.is-#{$name} {
+      background: $color;
+    }
+  }
+}
