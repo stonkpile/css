@@ -1,0 +1,15 @@
+$primary-color: #fd746c;
+$secondary-color: #6c63ff;
+
+$success-color: #1dd1a1;
+$warning-color: #f6b93b;
+$danger-color: #ee5253;
+
+$colors: (
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+
+  'success': $success-color,
+  'warning': $warning-color,
+  'danger': $danger-color
+);

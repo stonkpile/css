@@ -8,8 +8,8 @@
 }
 
 .is-disabled {
-  cursor: not-allowed;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
 }
 
 .is-resizeble {
@@ -18,4 +18,12 @@
 
 .is-not-resizeble {
   resize: none !important;
+}
+
+.is-radiusless {
+  border-radius: 0 !important;
+}
+
+.is-shadowless {
+  box-shadow: none !important;
 }
