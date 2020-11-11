@@ -1,0 +1,8 @@
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100%;
+  flex: 1 1 auto;
+  background: #dae3ea;
+  border-right: 1px solid #cad6e0;
+  overflow-y: auto;
+}
