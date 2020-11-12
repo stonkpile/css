@@ -1,15 +1,55 @@
-$primary-color: #fd746c;
-$secondary-color: #6c63ff;
+:root {
+  --default: #dbdbdb;
+  --default-accent: #363636;
 
-$success-color: #1dd1a1;
-$warning-color: #f6b93b;
-$danger-color: #ee5253;
+  --primary: #0fb9b1;
+  --primary-accent: #2bcbba;
+
+  --secondary: #8854d0;
+  --secondary-accent: #a55eea;
+
+  --info: #2d98da;
+  --info-accent: #45aaf2;
+
+  --link: #3867d6;
+  --link-accent: #4b7bec;
+
+  --success: #20bf6b;
+  --success-accent: #26de81;
+
+  --warning: #f7b731;
+  --warning-accent: #fed330;
+
+  --danger: #eb3b5a;
+  --danger-accent: #fc5c65;
+
+  --light: #f5f6fa;
+  --light-accent: #dcdde1;
+
+  --dark: #2c2c54;
+  --dark-accent: #40407a;
+
+  --black: #111;
+  --black-accent: #000;
+
+  --white: #FFF;
+  --white-accent: #EEE;
+}
 
 $colors: (
-  'primary': $primary-color,
-  'secondary': $secondary-color,
+  'default': var(--primary),
+  'primary': var(--primary),
+  'secondary': var(--secondary),
 
-  'success': $success-color,
-  'warning': $warning-color,
-  'danger': $danger-color
+  'info': var(--info),
+  'link': var(--link),
+
+  'success': var(--success),
+  'warning': var(--warning),
+  'danger': var(--danger),
+
+  'light': var(--light),
+  'dark': var(--dark),
+  'black': var(--black),
+  'white': var(--white)
 );

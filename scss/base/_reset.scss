@@ -8,9 +8,10 @@
   height: 100%;
 }
 
+// chrome autofill reset
 input:-webkit-autofill {
-  background-color: #FFF !important;
-  box-shadow: 0 0 0 1000px #FFF inset !important;
+  background-color: white !important;
+  box-shadow: 0 0 0 1000px white inset !important;
 }
 
 hr {
@@ -32,8 +33,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  font-size: 1rem;
+  font-family: var(--code-font-family);
+  font-size: var(--font-size);
 }
 
 small {

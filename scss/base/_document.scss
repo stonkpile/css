@@ -19,7 +19,7 @@ body {
 
 html {
   background: var(--noise), linear-gradient(15deg, #a0a0a0, #eaeaea);
-  font-size: 100%;
+  font-size: var(--scale);
   min-height: 100%;
   word-break: break-word;
   -ms-overflow-style: -ms-autohiding-scrollbar;

@@ -1,15 +1,3 @@
-/**
- * A multi-purpose horizontal level, which can contain almost any other element
- *
- *  .level: the main container
- *    .level-left: for the left side
- *    .level-right: for the right side
- *    .level-item: for each individual element
- *
- * Changelog
- * 07/10/2020: Added initial component
-*/
-
 .level {
   align-items: center;
   justify-content: space-between;

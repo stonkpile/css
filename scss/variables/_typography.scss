@@ -1,5 +1,9 @@
-$default-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+:root {
+  --scale: 100%;
+  --line-height: 1.5;
+  --font-size: 1rem;
 
-$font-family-base: $default-font-family;
-$font-family-heading: $default-font-family;
-$font-family-code: monospace !default;
+  --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --heading-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --code-font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
