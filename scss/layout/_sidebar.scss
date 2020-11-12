@@ -1,8 +1,10 @@
 .sidebar {
+  max-width: var(--sidebar-width);
   width: var(--sidebar-width);
-  height: 100%;
-  flex: 1 1 auto;
-  background: #dae3ea;
-  border-right: 1px solid #cad6e0;
+  flex: 1 0 auto;
+  background: white;
+  // background: var(--noise), linear-gradient(15deg, #1b1b1b, #383838);
+  border-right: 1px solid #dbdbdb;
   overflow-y: auto;
+  padding: 1.5rem;
 }

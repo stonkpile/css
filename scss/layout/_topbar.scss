@@ -1,0 +1,17 @@
+.topbar {
+  flex: 0 1 auto;
+  // background: var(--noise), linear-gradient(35deg, #4a4a4a, #454545);
+  border-bottom: 1px solid #dbdbdb;
+  padding: 1.5rem;
+  
+  // Don't do this, kids.
+  margin-top: -1.5rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

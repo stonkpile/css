@@ -18,12 +18,21 @@ body {
 }
 
 html {
-  background: var(--noise), linear-gradient(15deg, #a0a0a0, #eaeaea);
+  background: white;
+  // background: var(--noise), linear-gradient(15deg, #a0a0a0, #eaeaea);
   font-size: var(--scale);
+  font-family: var(--base-font-family);
   min-height: 100%;
   word-break: break-word;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
 }

@@ -1,5 +1,14 @@
 .container {
+  padding: var(--gap);
   width: 90%;
   max-width: 75rem;
   margin: 0 auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  &.is-fluid {
+    width: 100%;
+    max-width: 100%;
+  }
 }

@@ -1,0 +1,67 @@
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &.is-centered {
+    justify-content: center;
+  }
+
+  button {
+    margin: 0 calc(var(--gap) / 2) calc(var(--gap) / 2) 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &.are-small .button {
+    font-size: 87.5%;
+  }
+
+  &.has-addons .button {
+    &:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      margin-right: -1px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.button {
+  margin-bottom: calc(var(--gap) / 2);
+  padding-bottom: calc(0.5rem - 1px);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: calc(0.5rem - 1px);
+
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--base-size);
+  font-weight: 500;
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.25rem;
+  color: var(--main-color);
+  white-space: nowrap;
+}
+
+.button[disabled],
+fieldset[disabled] .button,
+.button.is-disabled {
+  background-color: #fff;
+  border-color: #dbdbdb;
+  box-shadow: none;
+  opacity: .5;
+}

@@ -1,0 +1,64 @@
+.columns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  &:last-child {
+    margin-bottom: -0.75rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: calc(1.5rem - 0.75rem);
+  }
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+  width: 100%;
+
+  &.is-half {
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 50%;
+    }
+  }
+
+  &.is-one-third {
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: calc(100% / 3);
+      flex: none;
+    }
+  }
+
+  &.is-one-quarter {
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 25%;
+      flex: none;
+    }
+  }
+
+  &.is-one-fifth {
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 20%;
+      flex: none;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "@stonkpile/css",
+  "name": "qbnk-css",
   "version": "0.0.1",
   "description": "A css framework.",
   "main": "dist/style.css",
